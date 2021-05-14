@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% How to use writeLaTeX: 
+% How to use writeLaTeX:
 %
 % You edit the source code here on the left, and the preview on the
 % right shows you the result within a few seconds.
@@ -18,13 +18,13 @@
 
 \usepackage{graphicx,url}
 
-\usepackage[brazil]{babel}   
-\usepackage[utf8]{inputenc} 
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=blue,
     citecolor=blue,
     pdfpagemode=FullScreen,
@@ -40,15 +40,13 @@
 \email{\{jefferson,cburle,anaeliza,dcortiz\}@nic.br}
 }
 
-\begin{document} 
+\begin{document}
 
 \maketitle
 
-
-
-\begin{abstract}
-Resumo.
-\end{abstract}
+%\begin{abstract}
+%%Resumo.
+%\end{abstract}
 
 
 
@@ -61,16 +59,15 @@ Resumo.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Motivação}
 
-É notório o potencial que a Inteligência Artificial (IA) possui para impactar o modo como vivemos, por meio de artefatos inteligentes. Assistentes virtuais auxiliam milhões de pessoas a organizarem suas agendas. Sistemas de recomendação revelam filmes, músicas e contatos profissionais em consonância com nossas preferências, enquanto sistemas de navegação geram mapas que abstraem complexidades desnecessárias para quem se dirige a um endereço. A IA auxilia os profissionais da saúde a diagnosticar e tratar doenças, identificar novos fármacos, além de detectar fraudes financeiras. Diariamente, bilhões de buscas na Web são motorizadas pela IA. Cadeias de suprimentos complexas dependem em grande parte destes artefatos inteligentes. Mundialmente, governos classificam a IA como uma resposta estratégica até mesmo para o enfrentamento dos sérios desafios globais como a redução de fatalidades no trânsito, a mitigação dos efeitos das mudanças climáticas e o combate às ameaças cibernéticas.
+É notório o potencial que a Inteligência Artificial (IA) possui para impactar o modo como vivemos, por meio de seus artefatos inteligentes. Assistentes virtuais auxiliam milhões de pessoas a organizarem suas agendas. Sistemas de recomendação revelam filmes, músicas e contatos profissionais em consonância com nossas preferências, enquanto sistemas de navegação geram mapas que abstraem complexidades desnecessárias para quem se dirige a um endereço. A IA auxilia os profissionais da saúde a diagnosticar e tratar doenças, identificar novos fármacos, além de detectar fraudes financeiras. Diariamente, bilhões de buscas na Web são motorizadas pela IA. Cadeias de suprimentos complexas dependem em grande parte destes artefatos inteligentes. Mundialmente, governos classificam a IA como uma resposta estratégica até mesmo para o enfrentamento dos sérios desafios globais como a redução de fatalidades no trânsito, a mitigação dos efeitos das mudanças climáticas e o combate às ameaças cibernéticas.
 
- Entretanto, à medida que o mundo se torna cada vez mais dependente da IA, cresce a preocupação sobre alguns dos efeitos do uso não regulamentado de artefatos inteligentes como por exemplo as injustiças e vieses contra grupos minoritários, a falta de transparência, a prestação de contas entre outras. Embora a regulamentação sobre o desenvolvimento de artefatos inteligentes seja incipiente no mundo todo, seus desenvolvedores devem se pautar em recomendações de governança, marcos legais, princípios éticos além do estado-da-arte na literatura científica para oferecer produtos e serviços para seus consumidores e clientes. 
+Entretanto, à medida que o mundo se torna cada vez mais dependente da IA, cresce a preocupação sobre os efeitos do uso não regulamentado de artefatos inteligentes, que podem, entre outras coisas: reforçar estereótipos raciais e de gênero; favorecer grupos majoritários por meio de vieses que não foram identificados durante a fase de treinamento; não ser transparentes com relação a seus processos de decisão, nem interpretáveis para seus usuários; ou ainda não estarem sujeitos a mecanismos de prestação de contas e auditorias.
 
-Estes requisitos éticos e legais devem ser amplificados quando os fornecedores são órgãos do poder público de sociedades democráticas, uma vez que os artefatos desenvolvidos podem alcançar todos seus cidadãos, potencialmente violando direitos fundamentais. Embora sociedades como a chinesa adotem abertamente soluções de IA como a de pontuação eletrônica (em inglês, \textit{e-score}), sociedades democráticas classificam como inaceitáveis as soluções de vigilância governamental indiscriminada além de outras com alto risco de violação de direitos fundamentais. A Comissão Europeia tem anunciado protocolos rígidos, que visam, entre outras coisas, restringir o abuso de IA por governos repressivos \cite{EC2020}.
+Embora a regulamentação sobre o desenvolvimento de artefatos inteligentes seja incipiente no mundo todo, seus desenvolvedores devem se pautar em recomendações de governança, marcos legais, princípios éticos além do estado-da-arte na literatura científica para oferecer produtos e serviços para seus consumidores e clientes. Estes requisitos éticos e legais devem ser amplificados quando os fornecedores são órgãos do poder público de sociedades democráticas, uma vez que os artefatos desenvolvidos podem alcançar todos seus cidadãos, potencialmente violando direitos fundamentais.
 
-Embora seja imperativo que governos democráticos desenvolvam IA com responsabilidade e ética, pouco se sabe sobre o processo de desenvolvimento que órgãos públicos efetivamente adotam para desenvolver estes artefatos inteligentes. Não se sabe, por exemplo, se estes artefatos são desenvolvidos internamente ou por terceiros. Desconhecemos trabalhos na literatura que identificam se e como os potenciais riscos às violações de direitos de cidadãos são identificados e tratados pelos órgãos. Além disso, pouco se sabe sobre os vieses embutidos nas decisões, previsões e classificações realizadas por estes artefatos. Ademais, é relevante entender, principalmente do ponto de vista da criação de políticas públicas, o grau de ciência dos profissionais que compõem os órgãos públicos sobre estas questões levantadas.
+A Comissão Europeia tem se comprometido com regulamentações sobre o desenvolvimento de artefatos inteligentes que visam criar um ecossistema em que os cidadãos europeus possam confiar no que a IA tem a oferecer \cite{EC2020}. A abordagem básica sobre o uso de IA segue uma classificação baseada em riscos: IAs de risco inaceitável serão banidas; as classificadas como de alto-risco estarão sujeitas à protocolos rígidos; as de risco limitado terão obrigações sobre a transparência; e as de risco mínimo, que não apresentam riscos significativos a direitos ou à segurança de seus cidadãos.
 
-
-
+No cenário dos órgãos do poder público brasileiro, pouco se sabe sobre o processo de desenvolvimento que órgãos públicos efetivamente adotam para desenvolver estes artefatos inteligentes. Não se sabe, por exemplo, se estes artefatos são desenvolvidos internamente ou por terceiros. Desconhecemos trabalhos na literatura que identificam se e como os potenciais riscos às violações de direitos de cidadãos são identificados e tratados pelos órgãos. Além disso, pouco se sabe sobre os vieses embutidos nas decisões, previsões e classificações realizadas por estes artefatos. Ademais, é relevante entender, principalmente do ponto de vista da criação de políticas públicas, o grau de ciência dos profissionais que compõem os órgãos públicos sobre estas questões levantadas.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % OBJETIVO E QP
@@ -85,16 +82,14 @@ Esta pesquisa pretende investigar, entender e analisar as estratégias e process
 QP - Como os órgãos do poder público brasileiro empregam artefatos de aprendizado de máquina para automatizar processos decisórios que potencialmente impactem o exercício de direitos dos seus cidadãos?
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ESCOPO
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Escopo}
-IA é um termo que pode se referir uma ampla gama de artefatos que exibem comportamento inteligente. A abordagem mais bem sucedida da IA é conhecida como Aprendizado de Máquina (em inglês, \textit{Machine Learning}), onde o aprendizado ocorre por meio de inferências realizadas a partir de um conjunto de treinamento. Nem toda IA engloba o aprendizado de máquina.
+IA é um termo que pode se referir a uma ampla gama de artefatos que exibem comportamento inteligente. A abordagem mais bem sucedida da IA é conhecida como Aprendizado de Máquina (em inglês, \textit{Machine Learning}), onde o aprendizado ocorre por meio de inferências realizadas a partir de um conjunto de treinamento. Nem toda IA engloba o aprendizado de máquina.
 
 Neste trabalho de pesquisa, restringimos a IA aos artefatos construídos utilizando aprendizado de máquina. Não analisaremos quaisquer artefatos, mesmo que inteligentes, que tenham sido desenvolvidos sem a capacidade de aprendizado.
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % MÉTODO PROPOSTO
@@ -104,7 +99,7 @@ Neste trabalho de pesquisa, restringimos a IA aos artefatos construídos utiliza
 
 Para responder a QP dividimos a coleta e análise dos dados em duas fases principais. Na primeira fase, coletaremos os dados de 3 órgãos públicos representativos de cada esfera: legislativa, executiva e judiciária. A definição dos órgãos públicos participantes depende da apresentação do projeto, demonstração de interesse e disponibilidade por parte do órgão e será feita posteriormente. Com os órgãos participantes, realizaremos entrevistas semi-estruturadas\footnote{~O roteiro das entrevistas semi-estruturadas pode ser encontrado neste \href{https://docs.google.com/document/d/1XO1mXbrIS49Nu2WjoxDkit6h-gZgGcsmll_4swI0RjU/edit?usp=sharing}{link}.} para coletar os dados e empregaremos procedimentos de \textit{Grounded Theory} \cite{Char06} para a consolidação e análise das entrevistas.
 
-Na segunda fase, a partir do conhecimento obtido nas entrevistas, elaboraremos um levantamento sobre a forma de adoção de IA por outros órgãos do poder público brasileiro. Utilizaremos um questionário como instrumento de coleta de dados. Para identificar os órgãos públicos, aproveitaremos os resultados de trabalhos anteriores como por exemplo \cite{SBG2020}, que identificaram 43 órgãos do poder público que se utilizarem de soluções de IA. Para analisar as respostas, usaremos estatística descritiva e procedimentos de \textit{Grounded Theory} \cite{Char06} para a consolidação das respostas qualitativas.
+Na segunda fase, a partir do conhecimento obtido nas entrevistas, elaboraremos um levantamento sobre a forma de adoção de IA por outros órgãos do poder público brasileiro. Utilizaremos um questionário como instrumento de coleta de dados. Para identificar os órgãos públicos, aproveitaremos os resultados de trabalhos anteriores como por exemplo \cite{SBG2020}, que identificaram 43 órgãos do poder público que se utilizam de soluções de IA. Para analisar as respostas, usaremos estatística descritiva e procedimentos de \textit{Grounded Theory} \cite{Char06} para a consolidação das respostas qualitativas.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -115,22 +110,15 @@ Na segunda fase, a partir do conhecimento obtido nas entrevistas, elaboraremos u
 %Some text.
 
 
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % RESULTADOS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Resultados Esperados}
 
-A IA tem sido frequentemente classificada como o conjunto de tecnologiais mais essenciais do século 21, porque pode potencializar o crescimento econômico das nações bem como fonte de inovação e a criação de novas oportunidades\footnote{\href{https://www.accenture.com/\_acnmedia/PDF-57/Accenture-AI-Economic-Growth-Infographic.pdf}{Pesquisa da Accenture}}. No entanto, apesar do potencial estratégico, institutos de pesquisa constataram que existe um déficit de conhecimento sobre como empregar soluções de IA no mundo corporativo \cite{Pew2018} e, acreditamos, na esfera do poder público brasileiro.
+A IA costuma figurar entre as tecnologias mais essenciais do século 21, principalmente por estar fortemente associada à inovação, disrupção e uso inteligente de recursos\footnote{~\href{https://www.accenture.com/\_acnmedia/PDF-57/Accenture-AI-Economic-Growth-Infographic.pdf}{Infográfico do Crescimento Econômico da Accenture}}. As leis, regulamentações e diretrizes de outros países democráticos apontam que é imperativo levar em conta a dimensão ética na escolha, compra ou desenvolvimento de artefatos inteligentes, especialmente por órgãos do poder público. No entanto, apesar de seu potencial estratégico, ainda existe um déficit de conhecimento sobre como inovar, empregar e desenvolver artefatos inteligentes, tanto no mundo corporativo \cite{Pew2018} quanto---acreditamos---na esfera do poder público brasileiro.
 
-Entender como os órgãos do poder público empregam soluções de IA poderá permitir a criação de políticas públicas baseadas em evidência, ao otimizar a alocação de recursos....
-
-
-
-
+Este trabalho de pesquisa visa estudar, entender e analisar em profundidade o \textit{modus operandi} de órgãos do poder público brasileiro no uso e adoção de artefatos inteligentes, incluindo suas considerações (ou a ausência delas) sobre as implicações éticas envolvidas. Acreditamos que os resultados deste trabalho possam contribuir não somente para informar à sociedade brasileira o quão responsável e ético é o emprego de artefatos inteligentes por nossos servidores, mas também para oferecer sugestões concretas do que deve ser melhorado no uso da IA.
 
 \bibliographystyle{sbc}
 \bibliography{refs}
